@@ -29,3 +29,7 @@ Reasignar los pacientes de la especialidad de _Pediatría_ a _Médico de familia
 ## 4. Apartado 4.
 
 Comprobar si hay pacientes asignados a _Pediatria_
+
+## 5. Apartado 5.
+
+Calcular el número de pacientes asignados a cada una de las especialidades: _Pediatría_, _Médico de familia_ y _Cardiología_.
