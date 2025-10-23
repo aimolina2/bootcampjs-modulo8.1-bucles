@@ -12,3 +12,12 @@ Pasos para iniciar el proyecto:
 a. Lista de pacientes asignados a _Pediatría_.
 
 b. Lista de pacientes asignados a _Pediatría_ y con menos de 10 años.
+
+## 2. Apartado 2.
+
+Activar protocolo de urgencia si:
+
+- Ritmo cardiaco es superior a 100 p/m
+- Temperatura corporal superior a 39º
+
+## 3. Apartado 3.
