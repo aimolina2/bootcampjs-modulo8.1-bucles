@@ -110,3 +110,27 @@ console.log(
   "Pacientes asignados a Pediatría y menores de 10 años:",
   obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios(pacientes)
 );
+
+// Apartado 2: Activar protocolo de urgencia si el ritmo cardiaco es superior a 100 p/m o la temperatura corporal es superior a 39º
+
+const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
+  let activarProctolo = false;
+
+  // Tu implementación aquí :)
+  for (let i = 0; i < pacientes.length; i++) {
+    if (
+      pacientes[i].frecuenciaCardiaca > 100 &&
+      pacientes[i].temperatura > 39
+    ) {
+      activarProctolo = true;
+      break;
+    }
+  }
+
+  return activarProctolo;
+};
+
+console.log(
+  "Hay que activar el protocolo de urgencia:",
+  activarProtocoloUrgencia(pacientes)
+);

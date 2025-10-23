@@ -20,4 +20,6 @@ Activar protocolo de urgencia si:
 - Ritmo cardiaco es superior a 100 p/m
 - Temperatura corporal superior a 39º
 
+En este caso el resultado es _false_, pero comprobamos que al cambiar los datos de uno de los pacientes para que de positivo funciona correctamente.
+
 ## 3. Apartado 3.
