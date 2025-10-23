@@ -23,3 +23,5 @@ Activar protocolo de urgencia si:
 En este caso el resultado es _false_, pero comprobamos que al cambiar los datos de uno de los pacientes para que de positivo funciona correctamente.
 
 ## 3. Apartado 3.
+
+Reasignar los pacientes de la especialidad de _Pediatría_ a _Médico de familia_.

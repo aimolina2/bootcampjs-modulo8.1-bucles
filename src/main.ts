@@ -99,6 +99,7 @@ const obtenPacientesAsignadosAPediatriaYMenorDeDiezAnios = (
   pacientes: Pacientes[]
 ): Pacientes[] => {
   const pacientesPediatriaMenoresDeDiezAnios = [];
+
   for (let i = 0; i < pacientes.length; i++) {
     if (pacientes[i].especialidad === "Pediatra" && pacientes[i].edad < 10) {
       pacientesPediatriaMenoresDeDiezAnios.push(pacientes[i]);
@@ -116,7 +117,6 @@ console.log(
 const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
   let activarProctolo = false;
 
-  // Tu implementación aquí :)
   for (let i = 0; i < pacientes.length; i++) {
     if (
       pacientes[i].frecuenciaCardiaca > 100 &&
@@ -133,4 +133,29 @@ const activarProtocoloUrgencia = (pacientes: Pacientes[]): boolean => {
 console.log(
   "Hay que activar el protocolo de urgencia:",
   activarProtocoloUrgencia(pacientes)
+);
+
+// Apartado 3: Reasignr los pacientes de Pediatría a Médico de Familia
+
+const reasignaPacientesAMedicoFamilia = (
+  pacientes: Pacientes[]
+): Pacientes[] => {
+  // Tu implementación aquí :)
+  let nuevoListadoConPacientesReasignados: Pacientes[] = [];
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra") {
+      nuevoListadoConPacientesReasignados.push({
+        ...pacientes[i],
+        especialidad: "Medico de familia",
+      });
+    } else {
+      nuevoListadoConPacientesReasignados.push(pacientes[i]);
+    }
+  }
+  return nuevoListadoConPacientesReasignados;
+};
+
+console.log(
+  "Pacientes reasignados a Médico de Familia:",
+  reasignaPacientesAMedicoFamilia(pacientes)
 );
