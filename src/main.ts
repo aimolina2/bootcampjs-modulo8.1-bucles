@@ -135,12 +135,11 @@ console.log(
   activarProtocoloUrgencia(pacientes)
 );
 
-// Apartado 3: Reasignr los pacientes de Pediatría a Médico de Familia
+// Apartado 3: Reasignar los pacientes de Pediatría a Médico de Familia
 
 const reasignaPacientesAMedicoFamilia = (
   pacientes: Pacientes[]
 ): Pacientes[] => {
-  // Tu implementación aquí :)
   let nuevoListadoConPacientesReasignados: Pacientes[] = [];
   for (let i = 0; i < pacientes.length; i++) {
     if (pacientes[i].especialidad === "Pediatra") {
@@ -158,4 +157,23 @@ const reasignaPacientesAMedicoFamilia = (
 console.log(
   "Pacientes reasignados a Médico de Familia:",
   reasignaPacientesAMedicoFamilia(pacientes)
+);
+
+// Apartado 4: Comprobar si hay pacientes asignados a Pediatría
+
+const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
+  // Tu implementación aquí :)
+  let hayPacientesPediatria = false;
+
+  for (let i = 0; i < pacientes.length; i++) {
+    if (pacientes[i].especialidad === "Pediatra") {
+      hayPacientesPediatria = true;
+      break;
+    }
+  }
+  return hayPacientesPediatria;
+};
+console.log(
+  "¿Hay pacientes asignados a Pediatría?:",
+  HayPacientesDePediatria(pacientes)
 );
