@@ -33,3 +33,4 @@ Comprobar si hay pacientes asignados a _Pediatria_
 ## 5. Apartado 5.
 
 Calcular el número de pacientes asignados a cada una de las especialidades: _Pediatría_, _Médico de familia_ y _Cardiología_.
+Creamos un bucle que sume 1 cada vez que encuentra un paciente de una especialidad.

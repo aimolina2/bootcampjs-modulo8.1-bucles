@@ -162,7 +162,6 @@ console.log(
 // Apartado 4: Comprobar si hay pacientes asignados a Pediatría
 
 const HayPacientesDePediatria = (pacientes: Pacientes[]): boolean => {
-  // Tu implementación aquí :)
   let hayPacientesPediatria = false;
 
   for (let i = 0; i < pacientes.length; i++) {
@@ -189,7 +188,6 @@ interface NumeroPacientesPorEspecialidad {
 const cuentaPacientesPorEspecialidad = (
   pacientes: Pacientes[]
 ): NumeroPacientesPorEspecialidad => {
-  // Tu implementación aquí :)
   const totalPacientesPorEspecialidad: NumeroPacientesPorEspecialidad = {
     medicoDeFamilia: 0,
     pediatria: 0,
